@@ -1,0 +1,18 @@
+﻿var analytics = (function () {
+    return {
+        init: function () {
+            this.inicializarElementos();
+        },
+        inicializarElementos: function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-MYR1S85QVP');            
+        },
+    };
+})();
+
+$(document).ready(function () {
+    analytics.init();
+});

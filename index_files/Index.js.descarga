@@ -1,0 +1,4 @@
+﻿//Solo en esta vista se retiran margenes para aplicar estilos en toda la pagina
+$(document).ready(function () {
+    $("#mainLayout").removeClass("container");
+});

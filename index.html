@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://miseguridadsocial.gov.co/ -->
+<html lang="es-co"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .btn-login-white {
+        font-weight: 600;
+        border: 1px solid !important;
+        margin: 0 !important;
+        padding: 0.1em 0.7em !important;
+        cursor: pointer !important;
+        line-height: 1.5rem !important;
+        display: -webkit-box !important;
+        display: flex !important;
+        -webkit-box-align: center !important;
+        align-items: center !important;
+        border-radius: 20px;
+        background-color: #fff !important;
+        color: #36c !important;
+    }
+    </style>
+
+    
+    <meta name="viewport">
+    <title>Inicio | Mi Seguridad Social</title>
+    
+    <link rel="shortcut icon" href="https://miseguridadsocial.gov.co/images/iconos/icon-tab-entidad.png">
+
+    <!-- CSS -->
+    <!-- css bootstrap -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css gov.co -->
+    <link href="./index_files/styles-gov.css" rel="stylesheet">
+    <link href="./index_files/cdn.min.css" rel="stylesheet">
+    <!-- css personalizados CESC -->
+    <link href="./index_files/styles-cesc.css" rel="stylesheet">
+    <link href="./index_files/site.css" rel="stylesheet">
+
+    
+    <script src="./index_files/jquery.min.js.descarga"></script>
+
+    <!-- Bootstrap selects -->
+    <link href="./index_files/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Css Calendario  -->
+    <link href="./index_files/core.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/datepicker.css" rel="stylesheet" type="text/css">
+    
+    <link href="./index_files/gijgo.min.css" rel="stylesheet">
+
+    <!-- css dataTables -->
+    <link rel="stylesheet" type="text/css" href="./index_files/jquery.dataTables.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./index_files/js"></script>
+    <script src="./index_files/Analytics.js.descarga"></script>
+    
+<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script></head>
+<body __processed_b740a72f-f26e-4ce9-9499-085acc2e1b80__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d">
+    <header>
+        <!-- Inicio Navbar Menú Principal -->
+        <nav b-dazaf3rpcu="" class="navbar navbar-expand-lg navbar-govco navbar-expanded sticky-top" id="govco-header">
+            <div b-dazaf3rpcu="" class="container" bis_skin_checked="1">
+                <div b-dazaf3rpcu="" class="navbar-logo float-left" bis_skin_checked="1">
+                    <a b-dazaf3rpcu="" class="navbar-brand" href="https://www.gov.co/" target="_blank" title="Ir al portal GOV.CO">
+                        <img src="./index_files/logo-gov-co.svg" height="30" alt="Logo Gobierno de Colombia">
+                    </a>
+                </div>
+                <div b-dazaf3rpcu="" class="float-right" bis_skin_checked="1">
+                    <button b-dazaf3rpcu="" class="navbar-toggler" type="button" aria-controls="canvas_usuario_cesc" data-trigger="#canvas_usuario_cesc" aria-label="Abrir Opciones Versión Móvil">
+                        <span b-dazaf3rpcu="" class="govco-icon govco-icon-user-p"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Top Bar + Logo gov.co + Links-->
+            <div b-dazaf3rpcu="" class="nav-secondary  py-2" bis_skin_checked="1">
+                <div b-dazaf3rpcu="" class="row d-flex" style="align-items: center;" bis_skin_checked="1">
+                    <div b-dazaf3rpcu="" class="col-12 col-md-6 my-2" bis_skin_checked="1">
+                            <a b-dazaf3rpcu="" href="https://miseguridadsocial.gov.co/" title="Ir al inicio">
+                                <img class="my-2 d-block mx-auto img-fluid" width="60%" height="50" src="./index_files/logoentidad.png">
+                            </a>
+                    </div>
+                    <div b-dazaf3rpcu="" class="col-12 col-md-6 my-2" bis_skin_checked="1">
+                        <a b-dazaf3rpcu="" href="https://www.minsalud.gov.co/" target="_blank" title="Ir al Inicio del Ministerio de Salud y Protección Social" bis_size="{&quot;x&quot;:969,&quot;y&quot;:99,&quot;w&quot;:939,&quot;h&quot;:100,&quot;abs_x&quot;:969,&quot;abs_y&quot;:99}">
+                            <img class="my-2 d-block mx-auto img-fluid" alt="Logo del Ministerio de Salud y Protección Social" src="./index_files/Logo_Minsalud.png" width="25%" bis_size="{&quot;x&quot;:1321,&quot;y&quot;:99,&quot;w&quot;:234,&quot;h&quot;:100,&quot;abs_x&quot;:1321,&quot;abs_y&quot;:99}" bis_id="bn_yj24p74fksss6a76pq1akb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div b-dazaf3rpcu="" class="nav-secondary show-transition text-dark bg-light py-2 float-left" style=" filter:brightness(95%);" id="nav-secondary" bis_skin_checked="1">
+                <div b-dazaf3rpcu="" class="container" bis_skin_checked="1">
+                    <div b-dazaf3rpcu="" class="collapse navbar-collapse navbar-first-menu" bis_skin_checked="1">
+                        <ul b-dazaf3rpcu="" class="navbar-nav w-100 d-flex nav-items nav-items-desktop">
+                            <li b-dazaf3rpcu="" class="nav-item ">
+                                    <a b-dazaf3rpcu="" href="https://miseguridadsocial.gov.co/" class="nav-link">
+                                        Inicio
+                                    </a>
+                            </li>
+                            <li b-dazaf3rpcu="" class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="https://miseguridadsocial.gov.co/Home/CentroDeAyuda">
+                                    Centro de Ayuda
+                                </a>
+                                <ul b-dazaf3rpcu="" class="dropdown-menu fade-down">
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Ir a Preguntas frecuentes" href="https://miseguridadsocial.gov.co/Home/PreguntasFrecuentes">
+                                            Preguntas frecuentes
+                                        </a>
+                                    </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Ir a tutoriales" href="https://miseguridadsocial.gov.co/Home/Tutoriales">
+                                            Tutoriales
+                                        </a>
+                                    </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Ir a Infografía" href="https://miseguridadsocial.gov.co/Home/Infografia">
+                                            Infografía
+                                        </a>
+                                    </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Ir al Glosario" href="https://miseguridadsocial.gov.co/Home/Glosario">
+                                            Glosario
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li b-dazaf3rpcu="" class="nav-item dropdown">
+                                <a b-dazaf3rpcu="" class="nav-link dropdown-toggle" data-toggle="dropdown onClick">Servicios a la ciudadanía</a>
+                                <ul b-dazaf3rpcu="" class="dropdown-menu fade-down">
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Salud" href="https://miseguridadsocial.gov.co/Home/Salud">
+                                            Salud
+                                        </a>
+                                    </li><li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Cajas" href="https://miseguridadsocial.gov.co/Home/Cajas">
+                                                Cajas
+                                        </a>
+                                    </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Pensiones" href="https://miseguridadsocial.gov.co/Home/Pensiones">
+                                           Pensiones
+                                        </a>
+                                    </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Riesgos" href="https://miseguridadsocial.gov.co/Home/Riesgos">
+                                           Riesgos
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li b-dazaf3rpcu="" class="nav-item dropdown">
+                                <a b-dazaf3rpcu="" class="nav-link dropdown-toggle">
+                                    Acceso
+                                </a>
+                                <ul b-dazaf3rpcu="" class="dropdown-menu fade-down">
+                                        <li b-dazaf3rpcu="">
+                                            <a class="dropdown-item" title="Registrarse" href="https://miseguridadsocial.gov.co/Registro/Registro/DatosBasicos">
+                                                Registrarse
+                                            </a>
+                                        </li>
+                                    <li b-dazaf3rpcu="">
+                                        <a class="dropdown-item" title="Ir al Mapa del Sitio - Centro Especializado de Servicio al Ciudadano" href="https://miseguridadsocial.gov.co/Home/MapaDelSitio">
+                                            Mapa del Sitio
+                                        </a>
+                                    </li>
+                                        <li b-dazaf3rpcu="">
+                                            <a class="dropdown-item" title="Portal Ciudadano" href="https://miseguridadsocial.gov.co/Seguridad/Login/IniciarSesion">
+                                                Ir a Portal Ciudadano
+                                            </a>
+                                        </li>
+                                        <li b-dazaf3rpcu="">
+                                            <a class="dropdown-item" title="Portal Organizaciones" href="https://miseguridadsocial.gov.co/Home/PortalEmpresas">
+                                                Ir a Portal Organizaciones
+                                            </a>
+                                        </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul b-dazaf3rpcu="" class="navbar-nav w-25 d-flex nav-items nav-items-desktop float-right">
+                            <li b-dazaf3rpcu="" style="float:right;">
+                                        <a class="header-text-opciones header-over-opciones font-weight-light btn-login-white" href="https://miseguridadsocial.gov.co/Home/LoginCiudadano">
+                                            Iniciar sesión
+                                       </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div b-dazaf3rpcu="" class="navbar-nav navbar-notifications" id="notificationHeader" bis_skin_checked="1"></div>
+        </nav>
+        <!-- Fin Navbar Menú Principal -->
+    </header>
+
+    <!-- Inicio Barra de Accesibilidad -->
+    <div b-dazaf3rpcu="" style="z-index: 100; position:fixed" bis_skin_checked="1">
+        <div b-dazaf3rpcu="" class="block block--gov-accessibility position-inherit" bis_skin_checked="1">
+            <div b-dazaf3rpcu="" class="block-options navbar-expanded" bis_skin_checked="1">
+                <a b-dazaf3rpcu="" class="contrast-ref">
+                    <span b-dazaf3rpcu="" class="govco-icon govco-icon-contrast-n"></span>
+                    <label b-dazaf3rpcu="">Contraste</label>
+                </a>
+                <a b-dazaf3rpcu="" class="min-fontsize">
+                    <span b-dazaf3rpcu="" class="govco-icon govco-icon-less-size-n"></span>
+                    <label b-dazaf3rpcu="" class="align-middle">Reducir letra</label>
+                </a>
+                <a b-dazaf3rpcu="" class="max-fontsize">
+                    <span b-dazaf3rpcu="" class="govco-icon govco-icon-more-size-n"></span>
+                    <label b-dazaf3rpcu="" class="align-middle">Aumentar letra</label>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Barra de Accesibilidad -->
+
+    <div b-dazaf3rpcu="" bis_skin_checked="1">
+        <main b-dazaf3rpcu="" id="mainLayout" class="">
+            <link href="./index_files/Index.css" rel="stylesheet">
+
+
+
+<script src="./index_files/bootstrap.bundle.min.js.descarga" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link href="./index_files/_Carrusel.css" rel="stylesheet">
+
+<div id="carouselExampleGovco2" class="carousel slide carousel-fade carrusel-govco" data-bs-ride="carousel" bis_skin_checked="1">
+    <div class="carousel-inner" bis_skin_checked="1">
+        <div class="carousel-item active" data-bs-interval="10000" bis_skin_checked="1">
+            <a title="Mi Seguridad Social" tabindex="0">
+                <img src="./index_files/bn_inclusion_enfoque-diferencial.png" style="filter:brightness(40%);" alt="Mi Seguridad Social">
+            </a>
+            <div class="carousel-caption" bis_skin_checked="1">
+                <a href="https://miseguridadsocial.gov.co/#SectionRegistro" title="Mi Seguridad Social" tabindex="0">
+                    <h5><b>Mi Seguridad Social</b></h5>
+                    <p><b>Realice reportes de novedades y consultas en el Sistema General de Seguridad Social en Salud y en el Sistema General de Riesgos Laborales.</b></p>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000" bis_skin_checked="1">
+            <a title="Portal Ciudadano" tabindex="-1">
+                <img src="./index_files/bn_familias.jpg" style="filter:brightness(40%);" alt="Portal Ciudadano">
+            </a>
+            <div class="carousel-caption" bis_skin_checked="1">
+                <a href="https://miseguridadsocial.gov.co/#SectionCiudadano" title="Portal Ciudadano" tabindex="-1">
+                    <h5><b>Portal Ciudadano</b></h5>
+                    <p><b>Como ciudadano, usted podrá, entre otros: trasladarse a otra EPS, consultar el estado de su afiliación en salud y el historial de inscripciones a EPS, e incluir y excluir a sus beneficiarios.</b></p>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000" bis_skin_checked="1">
+            <a title="Portal Organizaciones" tabindex="-1">
+                <img src="./index_files/bn_miseguridadsocial_personas_oscuro.png" style="filter:brightness(30%);" alt="Portal Organizaciones">
+            </a>
+            <div class="carousel-caption" bis_skin_checked="1">
+                <a href="https://miseguridadsocial.gov.co/#SectionEmpresas" title="Portal Organizaciones" tabindex="-1">
+                    <h5><b>Portal Organizaciones</b></h5>
+                    <p><b>Ingrese con el usuario de su empresa o institución y registre o consulte novedades de los siguientes sistemas:</b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleGovco2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próxima imagen</span>
+    </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleGovco2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior imagen</span>
+    </button>
+    <div class="control-start-pause" bis_skin_checked="1">
+        <button class="controls start" type="button">
+            <span>Reproducir</span>
+        </button>
+        <button class="controls pause active" type="button">
+            <span>Pausar</span>
+        </button>
+    </div>
+    <div class="carousel-indicators" bis_skin_checked="1">
+        <button type="button" data-bs-target="#carouselExampleGovco2" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleGovco2" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselExampleGovco2" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+</div>
+
+<script src="./index_files/_Carrusel.js.descarga" type="text/javascript"></script>
+
+<div bis_skin_checked="1">
+    <section class="container" id="SectionCiudadano">
+        <div class="col-12 text-center" bis_skin_checked="1">
+            <h1>Trámites del Portal Ciudadano</h1>
+            <div class="cesc-title-line-center" bis_skin_checked="1"></div>
+        </div>
+        <p class="text-center">
+            Es un portal creado con el propósito de facilitar a los ciudadanos la afiliación al Sistema General de Seguridad Social en Salud y a los afiliados el reporte de sus novedades.
+        </p>
+        <div class="row" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Traslado de EPS" disabled="">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-directorios.jpg" alt="Traslado de EPS">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Traslado de EPS</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Consulta de Estado de Afiliación en Salud">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-victimas.jpg" alt="Consulta de Estado de Afiliación en Salud">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Consulta de Estado de Afiliación en Salud</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Consulta de Historial de Inscripciones a EPS">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-consultelo-usted-mismo.jpg" alt="Consulta de Historial de Inscripciones a EPS">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Consulta de Historial de Inscripciones a EPS</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Incluir y Excluir a Beneficiarios">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-familia.jpg" alt="Incluir y Excluir a Beneficiarios">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Incluir y Excluir a Beneficiarios</b></h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <br>
+        <p class="text-center">
+            Como afiliado tiene disponible la consulta del estado actual de su afiliación​, el historial de inscripciones que haya realizado a diferentes EPS, el reporte de traslado para usted y todo su grupo familiar, la inclusión y exclusión de beneficiarios, la actualización de datos complementarios y del documento de identidad, entre otras.
+        </p>
+        <br>
+        <div class="text-center d-flex" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="header-text-opciones btn-boder-white text-center py-2 px-5" href="https://miseguridadsocial.gov.co/Seguridad/Login/IniciarSesion">
+                IR A PORTAL CIUDADANO
+            </a>
+        </div>
+        <br><br>
+    </section>
+</div>
+
+<div class="bg-light" bis_skin_checked="1">
+    <section class="container" id="SectionEmpresas">
+        <div class="col-12 text-center" bis_skin_checked="1">
+            <h1>Trámites del Portal Organizaciones</h1>
+            <div class="cesc-title-line-center" bis_skin_checked="1"></div>
+        </div>
+        <p class="text-center">
+            Ingrese con el usuario de su empresa o institución y registre o consulte novedades de los siguientes sistemas:
+        </p>
+        <div class="row" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Sistema General de Riesgos Laborales" disabled="">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icon-riesgos.jpeg" alt="Sistema General de Riesgos Laborales">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>SGRL</b></h5>
+                    </div>
+                    <p>
+                        Acceda a la funcionalidades relacionadas con el Sistema general de riesgos laborales.
+                    </p>
+                </div>
+            </a>
+            &nbsp; &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Sistema General de Seguridad Social en Salud">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icon-salud.jpeg" alt="Sistema General de Seguridad Social en Salud">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>SGSSS</b></h5>
+                    </div>
+                    <p>
+                        Acceda a la funcionalidades relacionadas con el Sistema general de seguridad social en salud.
+                    </p>
+                </div>
+            </a>
+         </div>
+         <br>
+        <div class="row" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Sistema General de Pensiones">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icon-pension.jpeg" alt="Sistema General de Pensiones">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>SGP</b></h5>
+                    </div>
+                    <p>
+                        Acceda a la funcionalidades relacionadas con el Sistema general de pensiones.
+                    </p>
+                </div>
+            </a>
+            &nbsp; &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Sistema de Subsidio Familiar">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icon-cajas.jpeg" alt="Sistema de Subsidio Familiar">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>SSF</b></h5>
+                    </div>
+                    <p>
+                        Acceda a la funcionalidades relacionadas con el Sistema de subsidio familiar.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="text-center d-flex" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="header-text-opciones btn-boder-white text-center py-2 px-5" href="https://miseguridadsocial.gov.co/Home/PortalEmpresas">
+                IR A PORTAL ORGANIZACIONES
+            </a>
+        </div>
+        <br><br>
+    </section>
+</div>
+
+<section class="container" id="SectionRegistro">
+    <div class="col-12 text-center" bis_skin_checked="1">
+        <h1>¿Cómo Puedo Registrarme?</h1>
+        <div class="cesc-title-line-center" bis_skin_checked="1"></div>
+    </div>
+    <div class="col-12" bis_skin_checked="1">
+        <p class="text-center">
+            Para registrarse en el portal debe tener a la mano su documento de identidad y completar los cuatro pasos que se muestran a continuación:
+        </p>
+        <div class="row px-5" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <img src="./index_files/PasosRegistro.png" alt="¿Cómo Puedo Registrarme?">
+        </div>
+        <p class="text-center">
+            Para registrarse como empleador es importante que ya tenga un registro como Ciudadano y que sea el Representante Legal Principal
+        </p>
+        <div class="text-center d-flex" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="header-text-opciones btn-boder-white text-center py-2 px-5" href="https://miseguridadsocial.gov.co/Registro/Registro/DatosBasicos">
+                REGISTRARSE
+            </a>
+        </div>
+    </div>
+    <br><br>
+</section>
+
+<div class="bg-light" bis_skin_checked="1">
+    <section class="container" id="SectionCentroAyuda">
+        <div class="col-12 text-center" bis_skin_checked="1">
+            <h1>Centro de Ayuda</h1>
+            <div class="cesc-title-line-center" bis_skin_checked="1"></div>
+        </div>
+        <p class="text-center">
+            En el Centro de Ayuda encontrará diferentes opciones que lo guiarán en la interacción con el Portal. Los instrumentos y documentos que tenemos dispuestos para usted son:
+        </p>
+        <div class="row" style="display: flex; align-items: center; justify-content: center;" bis_skin_checked="1">
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Ir a Preguntas frecuentes" href="https://miseguridadsocial.gov.co/Home/PreguntasFrecuentes">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-preguntas-frecuentes.jpg" alt="Ir a Preguntas frecuentes">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Preguntas frecuentes</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Ir a tutoriales" href="https://miseguridadsocial.gov.co/Home/Tutoriales">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-rutas-e-infografias.jpg" alt="Ir a tutoriales">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Tutoriales</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Ir a Infografía" href="https://miseguridadsocial.gov.co/Home/Infografia">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-paso-1-participa.jpg" alt="Ir a Infografía">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Infografía</b></h5>
+                    </div>
+                </div>
+            </a>
+            &nbsp;
+            <a class="icono-tarjeta-govco vertical-tarjeta-govco" title="Ir al Glosario" href="https://miseguridadsocial.gov.co/Home/Glosario">
+                <div class="container-icono-tarjeta-govco" bis_skin_checked="1">
+                    <img src="./index_files/icono-paso-2-participa.jpg" alt="Ir al Glosario">
+                </div>
+                <div class="body-tarjeta-govco" bis_skin_checked="1">
+                    <div class="title-body-tarjeta-govco" bis_skin_checked="1">
+                        <h5 class="text-center"><b>Glosario</b></h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <br><br>
+    </section>
+</div>
+
+
+<script src="./index_files/Index.js.descarga" type="text/javascript"></script>
+        </main>
+    </div>
+
+    <!-- Inicio Volver Arriba -->
+    <govco-back-to-top b-dazaf3rpcu="" _ngcontent-sya-c0="" class="hydrated">
+        <div b-dazaf3rpcu="" class="scroll-to-top show-scrollTop" bis_skin_checked="1">
+            <button b-dazaf3rpcu="" id="idRetornarScroll">
+                <span b-dazaf3rpcu="" class="govco-icon govco-icon-shortu-arrow-n btn-svg-up-hover"></span>
+                <span b-dazaf3rpcu="" class="label-button-star-up">Volver a arriba</span>
+            </button>
+        </div>
+    </govco-back-to-top>
+    <!-- Fin Volver Arriba -->
+    <!-- Inicio Footer -->
+    <footer b-dazaf3rpcu="" class="gov-co-footer">
+        <div b-dazaf3rpcu="" class="gov-co-footer-pie footer-venta" bis_skin_checked="1">
+            <div b-dazaf3rpcu="" class="gov-co-footer-venta" bis_skin_checked="1">
+                <img class="img-fluid gov-co-logo-pie-mesa" src="./index_files/colombiaco_Mesa de trabajo 1.png">
+                <img class="img-fluid gov-co-logo-pie-blanco" src="./index_files/logo.svg">
+            </div>
+            <div b-dazaf3rpcu="" class="gov-co-presen-venta" bis_skin_checked="1">
+                <div b-dazaf3rpcu="" class="container-fluid" bis_skin_checked="1">
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <h5 b-dazaf3rpcu="" class="titulo-venta">Ministerio de Salud y Protección Social</h5>
+                        </div>
+                    </div>  
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <div b-dazaf3rpcu="" class="gov-detalles-venta" bis_skin_checked="1">
+                                <p b-dazaf3rpcu="">Dirección: Carrera 13 No. 32-76 Piso 1, Bogotá D.C.</p>
+                                <p b-dazaf3rpcu="">Grupo Gestor de Canales de Atención y Peticiones Ciudadanas</p>
+                                <p b-dazaf3rpcu="">Código Postal: 110311</p>
+                                <p b-dazaf3rpcu="">Horario de Atención: Lunes a viernes de 8:00 a.m. a 4:00 p.m.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <div b-dazaf3rpcu="" class="gov-co-social-media-venta" bis_skin_checked="1">
+                                <a b-dazaf3rpcu="" href="https://twitter.com/MinSaludCol" title="Ir al Twiter del Ministerio de Salud" class="gov-co-link-venta" target="_blank">
+                                    <img src="./index_files/icono-twitter.png" alt="Twitter MinSalud"> @MinSaludCol
+                                </a>
+                                <a b-dazaf3rpcu="" href="https://instagram.com/minsaludcol/" title="Ir al Instagram del Ministerio de Salud" class="gov-co-link-venta" target="_blank">
+                                    <img src="./index_files/icono-instagram.png" alt="Instagram MinSalud"> @MinSaludCol
+                                </a>
+                                <a b-dazaf3rpcu="" href="https://www.facebook.com/MinSaludCol" title="Ir al Facebook del Ministerio de Salud" class="gov-co-link-venta" target="_blank">
+                                    <img src="./index_files/icono-facebook.png" alt="Facebook MinSalud"> @MinSaludCol
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div b-dazaf3rpcu="" class="gov-co-conta-venta" bis_skin_checked="1">
+                <div b-dazaf3rpcu="" class="container-fluid" bis_skin_checked="1">
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <h5 b-dazaf3rpcu="" class="sub-titulo-venta">
+                                <span b-dazaf3rpcu="" class="govco-icon govco-icon-telephone size-1x"></span>
+                                Contacto
+                            </h5>
+                        </div>
+                    </div>
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <div b-dazaf3rpcu="" class="gov-detalles-venta-conta" bis_skin_checked="1">
+                                <p b-dazaf3rpcu="">Teléfono en Bogotá: (601) 3305043</p>
+                                <p b-dazaf3rpcu="">Resto del País: 018000960020</p>
+                                <p b-dazaf3rpcu="">Correo Institucional: miseguridadsocial@minsalud.gov.co</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div b-dazaf3rpcu="" class="row" bis_skin_checked="1">
+                        <div b-dazaf3rpcu="" class="col p-0" bis_skin_checked="1">
+                            <div b-dazaf3rpcu="" class="gov-co-pilo-venta" bis_skin_checked="1">
+                                <a class="goc-co-link-poli-venta" href="https://miseguridadsocial.gov.co/Home/MapaDelSitio">
+                                    Mapa del Sitio
+                                </a>
+                                <a class="goc-co-link-poli-venta link-poli" href="https://miseguridadsocial.gov.co/Home/Politicas">
+                                    Terminos y condiciones
+                                </a>
+                                <a class="goc-co-link-poli-venta link-poli" href="https://miseguridadsocial.gov.co/Home/NormatividadVigente">
+                                    Normatividad Vigente
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+
+    <!-- js popper -->
+    <script src="./index_files/popper.min.js.descarga"></script>
+
+    <!-- js bootstrap -->
+    <script src="./index_files/bootstrap.min.js.descarga"> </script>
+
+    <!-- Bootstrap Javascript selects -->
+    <script src="./index_files/bootstrap-select.min.js.descarga" type="text/javascript"></script>    
+
+    <!-- Js calendario -->
+    <script src="./index_files/core.js.descarga" type="text/javascript"></script>
+    <script src="./index_files/datepicker.js.descarga"></script>
+    <script src="./index_files/gijgo.min.js.descarga"></script>
+
+    <!-- utils Inicializador-->
+    <script src="./index_files/utils.js.descarga" type="text/javascript"></script>
+    <script src="./index_files/Inicializador.js.descarga"></script>
+
+    <!-- js dataTables -->
+    <script type="text/javascript" src="./index_files/jquery.dataTables.min.js.descarga"></script>
+
+    
+    <script src="./index_files/_Layout.js.descarga" type="text/javascript"></script>
+    
+
+
+</body></html>

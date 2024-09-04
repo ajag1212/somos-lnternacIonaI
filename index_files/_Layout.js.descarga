@@ -1,0 +1,60 @@
+﻿var _layout = (function () {
+    return {
+        init: function () {
+            this.inicializarElementos();
+        },
+        navbarDropdown: function () {
+            $("#navbarDropdown").click(function () {
+                alert('Mensaje');
+                var liParent = this.closest('.dropdown');
+                if (liParent != null) {
+                    var liElement = liParent[0] ?? liParent;
+                    var ulSubMenu = liElement.getElementsByClassName("dropdown-menu");
+                    if (ulSubMenu != null) {
+                        var ulElement = ulSubMenu[0] ?? ulSubMenu;
+                        if (ulElement.style.display == "block") {
+                            ulElement.style.display = "none";
+                        }
+                        else {
+                            ulElement.style.display = "block";
+                        }
+                    }
+                }
+            });
+        },
+        retornarScroll: function () {
+            $("#idRetornarScroll").click(function () {
+                utils.scrollToTop();
+            });
+        },
+        inicializarElementos: function () {
+            $('.calendar').datepicker({
+                //locale: 'es-es',
+                format: 'yyyy-mm-dd',
+                uiLibrary: 'bootstrap4',
+                keyboardNavigation: true,
+                icons: {
+                    // rightIcon: '<span aria-label="Abrir calendario"><i class="material-icons">date_range</i></span>'
+                }
+            });
+
+            $('.calendar1').datepicker({
+                //locale: 'es-es',
+                format: 'yyyy-mm-dd',
+                uiLibrary: 'bootstrap4',
+                keyboardNavigation: true,
+                icons: {
+                    // rightIcon: '<span aria-label="Abrir calendario"><i class="material-icons">date_range</i></span>'
+                }
+            });
+            this.navbarDropdown();
+            this.retornarScroll();
+            utils.initAccesibilidad();
+
+        },
+    };
+})();
+
+$(document).ready(function () {
+    _layout.init();
+});
